@@ -1,0 +1,78 @@
+<div class="col-md-12">
+    <div class="form-container">
+        <div class="col-md-12 row">
+            <div class="col-md-6">
+                <mat-form-field class="example-full-width">
+                    <mat-label>Name</mat-label>
+                    <input matInput placeholder="Bishop Cavallera" value="{{school.name}}">
+                </mat-form-field>
+            </div>
+            <div class="col-md-6">
+                <mat-form-field class="example-full-width">
+                    <mat-label>County</mat-label>
+                    <input matInput placeholder="North Horr" value="{{school.county}}">
+                </mat-form-field>
+            </div>
+            <div class="col-md-6">
+                <mat-form-field class="example-full-width">
+                    <mat-label>Contact</mat-label>
+                    <input matInput placeholder="buyoleisako@gmail.com" value="{{school.contactInformation.email}}">
+                </mat-form-field>
+            </div>
+            <div class="col-md-6">
+                <mat-form-field class="example-full-width">
+                    <mat-label>Phone</mat-label>
+                    <input matInput placeholder="+25471365635" value="{{school.contactInformation.phone}}">
+                </mat-form-field>
+            </div>
+            <div class="col-md-6">
+                <mat-form-field class="example-full-width">
+                    <mat-label>Choose a date</mat-label>
+                    <input matInput [matDatepicker]="picker">
+                    <mat-hint>MM/DD/YYYY</mat-hint>
+                    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                  </mat-form-field>
+            </div>
+           
+
+            <!-- Tittle editing Area -->
+            <div class="col-md-12">
+                <div class="col-md-6">
+                    <mat-form-field appearance="fill" class="example-full-width">
+                        <mat-label class="example-full-width">Select Type</mat-label>
+                        <mat-select [(value)]="selected">
+                            <mat-option>None</mat-option>
+                            <mat-option value="IGCSE">IGCSE</mat-option>
+                            <mat-option value="Secondary">Secondary</mat-option>
+                            <mat-option value="Primary">Primary</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+
+                    
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Selected Type</mat-label>
+                        <input matInput placeholder="Center" value="{{selected}}" disabled="">
+                    </mat-form-field>
+                </div>
+                <div class="col-md-6"></div>
+            </div>
+            <div class="col-md-6 ">
+                  
+            </div>
+            <div class="col-md-6 ">
+                <mat-divider></mat-divider>
+                <section>
+                    <div class="example-button-row ">
+                        <button mat-raised-button color="primary">Save</button>
+                        <button mat-raised-button color="warn">Revert Changes <mat-icon>arrow_back</mat-icon></button>
+                    </div>
+                </section>
+                <mat-divider></mat-divider>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+

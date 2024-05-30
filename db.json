@@ -1,0 +1,53 @@
+{
+    "schools": [
+      {
+        "name": "Green Valley Primary School",
+        "type": "Primary",
+        "products": ["Zeraki Analytics", "Zeraki Finance"],
+        "county": "Nairobi",
+        "registrationDate": "2020-01-15",
+        "contactInformation": {
+          "phone": "+254712345678",
+          "email": "contact@greenvalley.ac.ke"
+        },
+        "schoolBalance": {
+          "totalInvoices": 10000,
+          "totalCollections": 8000,
+          "balance": 2000
+        }
+      },
+      {
+        "name": "Hilltop Secondary School",
+        "type": "Secondary",
+        "products": ["Zeraki Timetable"],
+        "county": "Kiambu",
+        "registrationDate": "2019-05-20",
+        "contactInformation": {
+          "phone": "+254722345678",
+          "email": "info@hilltopsec.ac.ke"
+        },
+        "schoolBalance": {
+          "totalInvoices": 12000,
+          "totalCollections": 12000,
+          "balance": 0
+        }
+      },
+      {
+        "name": "Bright Future IGCSE School",
+        "type": "IGCSE",
+        "products": ["Zeraki Analytics", "Zeraki Timetable"],
+        "county": "Mombasa",
+        "registrationDate": "2021-03-10",
+        "contactInformation": {
+          "phone": "+254733345678",
+          "email": "admin@brightfuture.ac.ke"
+        },
+        "schoolBalance": {
+          "totalInvoices": 15000,
+          "totalCollections": 10000,
+          "balance": 5000
+        }
+      }
+    ]
+  }
+  

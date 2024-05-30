@@ -1,0 +1,103 @@
+<div class="loader-spinner" *ngIf="loadeService.isLoading | async">
+    <mat-spinner style="top: 50%;
+    left: 50%;"></mat-spinner>
+</div>
+<mat-toolbar >
+    <button mat-icon-button (click)="sidenav.toggle()" matTooltip="Menu">
+        <div class="toolbar" role="banner">
+            <img
+              width="40"
+              alt="Angular Logo"
+              src="../assets/images/logo.png"
+            />
+            <span class="heading">Sales Agent Dashboard Development</span>
+              <div class="spacer"></div>
+          </div>
+    </button>
+   
+    <span class="toolbar-item-spacer"></span>
+    <span class="username"></span>
+    <button mat-icon-button matTooltip="Edit">
+        <img
+        width="40"
+        alt="Edit"
+        src="../assets/images/edit.png"
+      />
+    </button>
+    <button mat-icon-button matTooltip="Preview"  routerLink="/preview">
+        <img
+        width="40"
+        alt="Preview"
+        src="../assets/images/preview.png"
+      />
+    </button>
+    <button mat-icon-button matTooltip="Notifications" >
+        <mat-icon matBadge="8" >notifications</mat-icon>
+    </button>
+    <button mat-icon-button matTooltip="My Account" [matMenuTriggerFor]="userAccountMenu">
+        <mat-icon>account_circle</mat-icon>
+    </button>
+    <mat-menu #userAccountMenu [overlapTrigger]="false" yPosition="below">
+        <button mat-menu-item routerLink="#">
+            <mat-icon>person</mat-icon><span>My Account</span>
+        </button>
+        <button mat-menu-item routerLink="#">
+            <mat-icon>settings</mat-icon><span>Settings</span>
+        </button>
+        <button mat-menu-item routerLink="#">
+            <mat-icon>help</mat-icon><span>Help</span>
+        </button>
+        <mat-divider></mat-divider>
+        <button mat-menu-item (click)="logoutUser()">
+            <mat-icon>exit_to_app</mat-icon>Logout
+        </button>
+    </mat-menu>
+</mat-toolbar>
+
+<mat-sidenav-container class="app-container"  >
+    <mat-sidenav #sidenav mode="side" opened="true" [class.mat-elevation-z4]="true" class="app-sidenav" >
+        <mat-nav-list>
+            <mat-list-item routerLink="/app-home">
+                <mat-icon>dashboard</mat-icon><span>Dashboard</span>
+            </mat-list-item>
+            <mat-expansion-panel [class.mat-elevation-z0]="true">
+                <mat-expansion-panel-header>
+                   Dashboard Module
+                </mat-expansion-panel-header>
+                <mat-nav-list>
+                    <a mat-list-item routerLink="/dashboard">
+                        <mat-icon>apple</mat-icon><span>Dashboard</span>
+                    </a>
+                </mat-nav-list>
+            </mat-expansion-panel>
+            <mat-expansion-panel [class.mat-elevation-z0]="true">
+                <mat-expansion-panel-header>
+                    Schools Module
+                </mat-expansion-panel-header>
+                <mat-nav-list>
+                    <a mat-list-item routerLink="/schools">Schools</a>
+                </mat-nav-list>
+            </mat-expansion-panel>
+            <mat-expansion-panel [class.mat-elevation-z0]="true">
+                <mat-expansion-panel-header>
+                    System Settings
+                </mat-expansion-panel-header>
+                <mat-nav-list>
+                    <a mat-list-item routerLink="/users">Users</a>
+                    <a mat-list-item routerLink="#">Companies</a>
+                    
+                </mat-nav-list>
+            </mat-expansion-panel>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <div class="loader-container" *ngIf="loadeService.isLoading | async">
+            <mat-progress-bar  mode="determinate"></mat-progress-bar>
+        </div>
+
+    
+        <router-outlet>
+           
+        </router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container> 

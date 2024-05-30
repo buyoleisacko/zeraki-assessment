@@ -1,0 +1,239 @@
+<div class="col-md-12">
+    <div class="form-container">
+        <h2 class="heading">Edit Article</h2>
+        <div class="col-md-12 row">
+         <div class="col-md-6">
+          <mat-form-field class="example-full-width">
+            <mat-label>Domain</mat-label>
+            <input matInput placeholder="BBC.com">
+          </mat-form-field>
+         </div>
+         <div class="col-md-6">
+          <mat-form-field class="example-full-width">
+            <mat-label>Url</mat-label>
+            <input matInput placeholder="https://bbc.com">
+          </mat-form-field>
+         </div>
+         <div class="col-md-6">
+          <mat-form-field class="example-full-width">
+            <mat-label>Title</mat-label>
+            <input matInput placeholder="Us midterm 2022 elections">
+          </mat-form-field>
+         </div>
+         <div class="col-md-6">
+          <mat-form-field class="example-full-width">
+            <mat-label>Public Learning</mat-label>
+            <input matInput placeholder="Center">
+          </mat-form-field>
+         </div>
+         
+         <div class="col-md-6 ">
+         </div>
+         <div class="col-md-6 ">
+          <mat-divider></mat-divider>
+          <section>
+            <div class="example-button-row ">
+              <button mat-raised-button color="primary">Save</button>
+              <button mat-raised-button color="warn">Revert Changes <mat-icon>arrow_back</mat-icon></button>
+            </div>
+          </section>
+          <mat-divider></mat-divider>
+         </div>
+        </div>
+
+     </div>
+</div>
+
+<!-- Tittle editing Area -->
+<div class="col-md-12">
+  <div class="col-md-6">
+    <mat-form-field appearance="fill"  class="example-full-width">
+      <mat-label class="example-full-width">Select Article Topic</mat-label>
+      <mat-select [(value)]="selected">
+        <mat-option>None</mat-option>
+        <mat-option value="Science And Technology">Science And Technology</mat-option>
+        <mat-option value="Frontend Development">Frontend Development</mat-option>
+        <mat-option value="Backend Development">Backend Development</mat-option>
+        <mat-option value="Devops Engineering">Devops Engineering</mat-option>
+        <mat-option value="Space  Exploration">Space  Exploration</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <mat-label>Selected Topic</mat-label>
+      <input matInput placeholder="Center" value="{{selected}}" disabled="">
+    </mat-form-field>
+    <!-- <p>You selected: {{selected}}</p> -->
+  </div>
+  <div class="col-md-6"></div>
+</div>
+
+<!-- Topic editing Area -->
+
+<div class="col-md-12">
+  <div class="form-container">
+      <div class="col-md-12 row">
+       <div class="col-md-6">
+        <mat-form-field class="example-full-width">
+          <mat-label>Article Title</mat-label>
+          <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+        </mat-form-field>
+       </div>
+       <div class="col-md-6">
+        <mat-form-field class="example-full-width">
+          <mat-label>AI Generated Titles</mat-label>
+          <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+        </mat-form-field>
+       </div>
+          
+       <div class="col-md-6 ">
+        <mat-divider></mat-divider>
+        <button class="topicSaveButton" mat-raised-button color="primary">Save</button>
+        <mat-divider></mat-divider>
+       </div>
+       <div class="col-md-6 ">
+       </div>
+      </div>
+
+   </div>
+</div>
+<!-- Topic editing end -->
+
+<!-- Article text  start -->
+<div class="col-md-12">
+  <div class="form-container">
+      <div class="col-md-12 row">
+       <div class="col-md-6">
+        <mat-form-field class="example-full-width">
+          <mat-label>Article Text</mat-label>
+          <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+        </mat-form-field>
+       </div>
+       <div class="col-md-6">
+        <mat-form-field class="example-full-width">
+          <mat-label>AI Generated Text</mat-label>
+          <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+        </mat-form-field>
+       </div>
+          
+       <div class="col-md-6 ">
+        <mat-divider></mat-divider>
+        <button class="topicSaveButton" mat-raised-button color="primary">Save</button>
+        <mat-divider></mat-divider>
+       </div>
+       <div class="col-md-6 ">
+       </div>
+      </div>
+
+   </div>
+</div>
+
+<!-- Article text end -->
+
+<!-- Short summary start -->
+<div class="col-md-12">
+  <div class="form-container">
+      <div class="col-md-12 row">
+       <div class="col-md-6">
+        <mat-form-field class="example-full-width">
+          <mat-label>Short Summary</mat-label>
+          <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+        </mat-form-field>
+       </div>
+       <div class="col-md-6">
+        <mat-form-field class="example-full-width">
+          <mat-label>AI Generated Short Summary</mat-label>
+          <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+        </mat-form-field>
+       </div>
+          
+       <div class="col-md-6 ">
+        <mat-divider></mat-divider>
+        <button class="topicSaveButton" mat-raised-button color="primary">Save</button>
+        <mat-divider></mat-divider>
+       </div>
+       <div class="col-md-6 ">
+       </div>
+      </div>
+
+   </div>
+</div>
+
+<!-- Short summary end -->
+
+<!-- Different perspectives -->
+<div class="col-md-12">
+  <div class="form-container">
+      <div class="col-md-12 row">
+       <div class="col-md-6">
+        <mat-form-field class="example-full-width">
+          <mat-label>Different Perspectives</mat-label>
+          <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+        </mat-form-field>
+       </div>
+       <div class="col-md-6">
+        <mat-form-field class="example-full-width">
+          <mat-label>AI Generated POVs</mat-label>
+          <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+        </mat-form-field>
+       </div>
+          
+       <div class="col-md-6 ">
+        <mat-divider></mat-divider>
+        <button class="topicSaveButton" mat-raised-button color="primary">Save</button>
+        <mat-divider></mat-divider>
+       </div>
+       <div class="col-md-6 ">
+       </div>
+      </div>
+
+   </div>
+</div>
+
+<!-- Different perspectives end -->
+
+<!-- Image url section start -->
+<div class="col-md-4">
+  <div class="col-md-12 dropdown">
+    <button class="btn btn-secondary card col-md-12" type="button" id="dropdownMenuButton1" >
+      Insert Image
+    </button>
+
+    <div>
+      <input class="form-control form-control-lg" id="formFileLg" type="file">
+    </div>
+    </div>
+</div>
+
+<!-- image url section end -->
+
+
+<!-- Wikipedia pages -->
+<div class="col-md-12 dropdown">
+  <button class="btn btn-secondary card col-md-12" type="button" id="dropdownMenuButton1" >
+    Select Wikipedia Pages
+  </button>
+  <app-wikipedia></app-wikipedia>
+  <div>
+
+    <div class="col-md-12 row">
+      <div class="col-md-6 ">
+      </div>
+      <div class="col-md-6 ">
+       <mat-divider></mat-divider>
+       <section>
+         <div class="example-button-row ">
+           <button mat-raised-button color="primary">Save</button>
+           <button mat-raised-button color="warn">Revert Changes <mat-icon>arrow_back</mat-icon></button>
+         </div>
+       </section>
+       <mat-divider></mat-divider>
+      </div>
+     </div>
+    </div>
+<!-- end of Wikipedia pages -->
+
+<mat-divider></mat-divider>
+<div class="submit">
+  <button mat-raised-button color="primary">Submit To App</button>
+</div>
+<mat-divider></mat-divider>
