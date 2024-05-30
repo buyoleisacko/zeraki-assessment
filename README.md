@@ -5,12 +5,12 @@
 ![Screenshot](./src/assets/images/login.PNG)
 
 # HomePage interface 
-![Screenshot](./src/assets/images/dashboard.PNG)
+![Screenshot](./src/assets/images/dashboard.png)
 
 # HomePage interface 
-![Screenshot](./src/assets/images/schools.PNG)
+![Screenshot](./src/assets/images/schools.png)
 # Editing interface 
-![Screenshot](./src/assets/images/details.PNG)
+![Screenshot](./src/assets/images/details.png)
 
 
 # Steps to run the application locally
