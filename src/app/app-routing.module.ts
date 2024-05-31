@@ -17,7 +17,7 @@ const routes: Routes = [
   {path: ':id', component: ViewDetailsComponent},
 
   //  users
-  {path: 'new-user', component: NewSchoolComponent}
+  {path: 'new-school', component: NewSchoolComponent}
 ];
 
 @NgModule({
